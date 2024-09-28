@@ -6,7 +6,7 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					create<span>-web3-dapp</span>
+					create<span>-funny web</span>
 				</h1>
 				<p>
 					this is zonkeys website!
@@ -17,11 +17,11 @@ export default function InstructionsComponent() {
 			<div className={styles.buttons_container}>
 				<a
 					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#components"}
+					href={"no"}
 				>
 					<div className={styles.button}>
 						{/* <img src="" width={"20px"} height={"20px"} /> */}
-						<p>What does bro want</p>
+						<p>Discord</p>
 					</div>
 				</a>
 				<a
@@ -29,7 +29,7 @@ export default function InstructionsComponent() {
 					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
 				>
 					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
+						{/<img src="idk" width={"20px"} height={"20px"} /> */}
 						<p>nothing much</p>
 					</div>
 				</a>
