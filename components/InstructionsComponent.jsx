@@ -35,11 +35,11 @@ export default function InstructionsComponent() {
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
+					href={"https://github.com/John142-dot"}
 				>
 					<div className={styles.button}>
 						<img
-							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
+							src="https://s2.ezgif.com/tmp/ezgif-2-617f3fa81a.jpg"
 							width={"20px"}
 							height={"20px"}
 						/>
@@ -48,18 +48,18 @@ export default function InstructionsComponent() {
 				</a>
 			</div>
 			<div className={styles.footer}>
-				<a href="https://alchemy.com/?a=create-web3-dapp" target={"_blank"}>
+				<a href="https://r.mtdv.me/articles/fkaPFkkzDi" target={"_blank"}>
 					<img
 						id="badge-button"
 						style={{ width: "240px", height: "53px" }}
-						src="https://static.alchemyapi.io/images/marketing/badgeLight.png"
-						alt="Alchemy Supercharged"
+						src="https://s2.ezgif.com/tmp/ezgif-2-617f3fa81a.jpg"
+						alt="wha"
 					/>
 				</a>
 				<div className={styles.icons_container}>
 					<div>
 						<a
-							href="https://github.com/alchemyplatform/create-web3-dapp"
+							href="https://github.com/John142-dot"
 							target={"_blank"}
 						>
 							Leave a star on Github
