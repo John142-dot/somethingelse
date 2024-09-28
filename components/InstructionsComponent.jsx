@@ -6,7 +6,7 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					create<span>-funny web</span>
+					create<span>zonkey?</span>
 				</h1>
 				<p>
 					this is zonkeys website!
@@ -21,7 +21,7 @@ export default function InstructionsComponent() {
 				>
 					<div className={styles.button}>
 						{/ <img src="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png" width={"20px"} height={"20px"} /> */}
-						<p>Discord</p>
+						<p>discord me</p>
 					</div>
 				</a>
 				<a
