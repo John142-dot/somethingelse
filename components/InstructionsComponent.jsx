@@ -9,7 +9,7 @@ export default function InstructionsComponent() {
 					create<span>-web3-dapp</span>
 				</h1>
 				<p>
-					Get started by editing this page in{" "}
+					this is zonkeys website!
 					<span>/pages/index.js</span>
 				</p>
 			</header>
@@ -20,22 +20,22 @@ export default function InstructionsComponent() {
 					href={"https://createweb3dapp.alchemy.com/#components"}
 				>
 					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Add Components</p>
+						{/* <img src="" width={"20px"} height={"20px"} /> */}
+						<p>What does bro want</p>
 					</div>
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#templates"}
+					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Explore Templates</p>
+						<p>nothing much</p>
 					</div>
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://docs.alchemy.com/docs/create-web3-dapp"}
+					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
 				>
 					<div className={styles.button}>
 						<img
