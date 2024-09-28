@@ -67,10 +67,10 @@ export default function InstructionsComponent() {
 					</div>
 					<div>
 						<a
-							href="https://twitter.com/AlchemyPlatform"
+							href="https://hi.com"
 							target={"_blank"}
 						>
-							Follow us on Twitter
+							no twitter😔
 						</a>
 					</div>
 				</div>
