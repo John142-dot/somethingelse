@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 
-import { RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import {
   mainnet,
@@ -15,6 +15,7 @@ import {
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import { metaMaskWallet, walletConnectWallet } from "@rainbow-me/rainbowkit/wallets";
 import MainLayout from "../layout/mainLayout";
 import { useRouter } from "next/router";
 
@@ -32,10 +33,15 @@ const { chains, provider } = configureChains(
   [alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );
 
-// Removing wallet apps by setting an empty array for connectors
+// Manually include only specific wallets
+const connectors = [
+  metaMaskWallet({ chains }),
+  // You can add more wallets or remove this line to exclude others
+];
+
 const wagmiClient = createClient({
   autoConnect: true,
-  connectors: [], // No wallets will be available
+  connectors,
   provider,
 });
 
@@ -43,7 +49,6 @@ export { WagmiConfig, RainbowKitProvider };
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
@@ -52,21 +57,6 @@ function MyApp({ Component, pageProps }) {
         chains={chains}
       >
         <MainLayout>
-          {/* Custom Connect Wallet Button */}
-          <ConnectButton.Custom>
-            {({ account, openConnectModal, openAccountModal }) => {
-              return account ? (
-                <button onClick={openAccountModal}>
-                  Your Custom Name (Connected)
-                </button>
-              ) : (
-                <button onClick={openConnectModal}>
-                  Your Custom Button Name
-                </button>
-              );
-            }}
-          </ConnectButton.Custom>
-
           <Component {...pageProps} />
         </MainLayout>
       </RainbowKitProvider>
